@@ -27,7 +27,9 @@ call vundle#end()
 filetype plugin indent on
 " End Vundle stuff
 
-let mapleader=","
+set hidden
+
+let mapleader=" "
 
 set foldmethod=syntax
 set foldlevelstart=1
