@@ -31,6 +31,9 @@ set hidden
 
 let mapleader=" "
 
+set exrc   " Enable per-directory .vimrc files
+set secure " Disable unsafe commands in local .vimrc files
+
 set foldmethod=syntax
 set foldlevelstart=1
 set foldnestmax=3
