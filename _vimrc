@@ -11,11 +11,11 @@ Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
 Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-endwise'
-Plugin 'tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'Raimondi/delimitMate'
-Plugin 'slim-template/vim-slim'
-Plugin 'thoughtbot/vim-rspec'
+"Plugin 'tpope/vim-rails'
+"Plugin 'slim-template/vim-slim'
+"Plugin 'thoughtbot/vim-rspec'
 " Snipmate & friends
 "Plugin 'MarcWeber/vim-addon-mw-utils'
 "Plugin 'tomtom/tlib_vim'
@@ -37,7 +37,8 @@ set secure " Disable unsafe commands in local .vimrc files
 set foldmethod=syntax
 set foldlevelstart=1
 set foldnestmax=3
-"set foldminlines=3
+set foldcolumn=4
+set foldminlines=4
 
 set backspace=2
 set nobackup
