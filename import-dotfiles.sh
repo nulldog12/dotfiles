@@ -1,2 +1,3 @@
 cp ~/.vimrc _vimrc
-cp ~/.vim/colors/jellybeans.vim vim/colors/
+cp ~/.vim/colors/* vim/colors
+cp ~/.vim/ftdetect/* vim/ftdetect
