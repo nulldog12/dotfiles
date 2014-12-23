@@ -10,13 +10,13 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
 Plugin 'pangloss/vim-javascript'
-Plugin 'tpope/vim-endwise'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-endwise'
 Plugin 'rking/ag.vim'
+"Plugin 'thoughtbot/vim-rspec'
 "Plugin 'tpope/vim-rails'
 "Plugin 'slim-template/vim-slim'
-"Plugin 'thoughtbot/vim-rspec'
 " Snipmate & friends
 "Plugin 'MarcWeber/vim-addon-mw-utils'
 "Plugin 'tomtom/tlib_vim'
@@ -60,14 +60,20 @@ set shiftwidth=2
 set softtabstop=2
 set autoindent
 
-inoremap jk <Esc>
-inoremap <S-CR> <CR><CR><Esc>ka<Tab>
-nnoremap <silent> <Leader>[ :tabprev<CR>
-nnoremap <silent> <Leader>] :tabnext<CR>
-nnoremap <silent> <Leader>j <C-w>j
-nnoremap <silent> <Leader>k <C-w>k
-nnoremap <silent> <Leader>l <C-w>l
-nnoremap <silent> <Leader>h <C-w>h
+set splitbelow
+set splitright
 
+inoremap jk <Esc>
+inoremap <S-CR> <CR><CR><Esc>-cc
 " K - split line at cursor
 nnoremap <silent> K i<CR><Esc>
+
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h12:cANSI
+  endif
+endif
