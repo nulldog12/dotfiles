@@ -1,3 +1,3 @@
-cp _vimrc ~/.vimrc
+cp vimrc ~/.vimrc
 cp vim/colors/* ~/.vim/colors
 cp vim/ftdetect/* ~/.vim/ftdetect
