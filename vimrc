@@ -1,22 +1,24 @@
 set nocompatible
+syntax on
+filetype off
 
 " Vundle stuff...
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
+Plugin 'slim-template/vim-slim'
 Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fugitive'
+"lugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'ervandew/supertab'
-Plugin 'pangloss/vim-javascript'
+"Plugin 'pangloss/vim-javascript'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-endwise'
 Plugin 'rking/ag.vim'
 "Plugin 'thoughtbot/vim-rspec'
 "Plugin 'tpope/vim-rails'
-"Plugin 'slim-template/vim-slim'
 " Snipmate & friends
 "Plugin 'MarcWeber/vim-addon-mw-utils'
 "Plugin 'tomtom/tlib_vim'
@@ -52,7 +54,6 @@ set incsearch
 set laststatus=2
 
 set number
-syntax on
 set cursorline
 colorscheme jellybeans
 set expandtab
@@ -77,3 +78,4 @@ if has("gui_running")
     set guifont=Consolas:h12:cANSI
   endif
 endif
+
