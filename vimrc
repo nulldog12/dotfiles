@@ -17,6 +17,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-endwise'
 Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
 "Plugin 'thoughtbot/vim-rspec'
 "Plugin 'tpope/vim-rails'
 " Snipmate & friends
@@ -68,6 +69,7 @@ inoremap jk <Esc>
 inoremap <S-CR> <CR><CR><Esc>-cc
 " K - split line at cursor
 nnoremap <silent> K i<CR><Esc>
+map <C-n> :NERDTreeToggle<CR>
 
 if has("gui_running")
   if has("gui_gtk2")
